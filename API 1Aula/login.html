@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senai Login</title>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body class="center">
+    
+    
+    <div>
+        <h1>Maria Balbis</h1>
+        <input type="text" id="name" title="Nome do Usuário" placeholder="Nome do Usuário">
+        <input type="password" id="password" title="Senha" placeholder="Senha">
+
+        <button onclick="send()">
+            Enviar
+        </button>
+
+    </div>
+
+    <script>
+        function send(){
+            const name = document.getElementById('name').value;
+            const password = document.getElementById('password').value;
+            console.log(name);
+            console.log(password);
+
+            const obj= {
+                name: name,
+                password: password
+
+            };
+
+            const login = JSON.parse(localStorage.getItem('login'));
+
+            console.log(login);
+
+                //const objString = JSON.stringify(obj);
+                //localStorage.setItem('login', objString);
+
+            //console.log(obj);
+           // console.log(objString);
+
+        }
+    </script>
+
+</body>
+</html>

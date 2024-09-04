@@ -1,0 +1,29 @@
+.center{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input{
+    background-color: rgb(255, 255, 255);
+    color: rgb(153, 151, 151);
+    padding: 7px;
+    border-radius: 2px;
+}
+
+button{
+
+    background-color: rgb(255, 255, 255);
+    padding: 7px;
+    border-radius: rgb(0, 0, 0);
+    border-radius: 50px;
+    width: 80px;
+    cursor: pointer;
+}
